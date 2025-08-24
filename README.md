@@ -1,12 +1,104 @@
-# React + Vite
+# あきナビ福祉
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**3分で見つかる、あなたに最適な福祉サービス**
 
-Currently, two official plugins are available:
+## 📝 プロジェクト概要
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+あきナビ福祉は、障がい福祉サービスを必要とする方々が、簡単に最適な施設を見つけられるWebアプリケーションです。チャットボット形式で質問に答えるだけで、あなたにぴったりの施設を提案します。
 
-## Expanding the ESLint configuration
+### 🎯 解決する課題
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **情報の分散**: 各事業所の空き状況を個別に確認する必要がある
+- **問い合わせの手間**: 電話での照会が必要で、断られることも多い  
+- **情報の鮮度**: まとまったサイトがなく、データが古い場合が多い
+- **アクセシビリティ**: 障がいのある方や高齢者には使いづらいUI
+
+### 💡 解決方法
+
+- **統一プラットフォーム**: 狛江市内の施設情報を一元化
+- **リアルタイム更新**: 空き状況の更新作業を簡素化
+- **マッチング機能**: ユーザーのニーズに合わせた施設提案
+- **アクセシブル設計**: WCAG 2.1/2.2 AAを参考にしたデザイン
+
+## ✨ 主な機能
+
+### 🤖 チャットボット
+- 自然な会話形式で必要な情報を収集
+- 5つの簡単な質問で最適な施設をマッチング
+- いつでもやり直し・前の質問に戻ることが可能
+
+### 📋 施設検索・一覧
+- マッチ度の高い順に施設を表示
+- 詳細フィルタリング機能（空き状況、設備、更新頻度など）
+- 空き情報の最終更新日時を明記
+
+### 🗺️ マップ表示
+- 地図上で施設の位置を確認
+- マッチ度に応じたカラー分けマーカー
+- 施設詳細のプレビュー表示
+
+### ♿ アクセシビリティ
+- WCAG 2.1/2.2 AAレベル参考
+- 文字サイズ変更機能（16px/20px/24px）
+- 高コントラスト設計
+
+### 📱 レスポンシブデザイン
+- スマートフォン・タブレット・PC対応
+- タッチ操作に最適化されたUI
+- モバイルファーストデザイン
+
+## 🛠️ 技術スタック
+
+### フロントエンド
+- **React 18+**: UIライブラリ
+- **Tailwind CSS**: スタイリング
+- **Lucide React**: アイコンライブラリ
+- **TypeScript**: 型安全性
+
+### バックエンド（予定）
+- **Node.js + Express**: APIサーバー
+- **PostgreSQL**: データベース
+- **Prisma**: ORM
+
+### インフラ（予定）
+- **Vercel**: ホスティング
+- **Supabase**: BaaS
+
+## 🏃‍♂️ クイックスタート
+
+### 前提条件
+- Node.js 18以上
+- npm または yarn
+
+### インストール
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/yourusername/akinavi-fukushi.git
+cd akinavi-fukushi
+
+# 依存関係をインストール
+npm install
+
+# 開発サーバーを起動
+npm run dev
+```
+
+http://localhost:3000 でアプリケーションが起動します。
+
+```
+
+## 🎨 デザインシステム
+
+### カラーパレット
+- **プライマリ**: ブルー系 (#3B82F6)
+- **セカンダリ**: グリーン系 (#10B981) 
+- **アクセント**: インディゴ系 (#6366F1)
+- **成功**: エメラルド系 (#059669)
+- **警告**: アンバー系 (#D97706)
+- **エラー**: レッド系 (#DC2626)
+
+### タイポグラフィ
+- **見出し**: Inter, Noto Sans JP
+- **本文**: system-ui, Noto Sans JP
+- **フォントサイズ**: 16px/20px/24px（可変）
